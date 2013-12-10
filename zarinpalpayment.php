@@ -193,7 +193,7 @@ class zarinpalpayment extends PaymentModule{
 	}
 	public function confirmPayment($order_amount){
         include('nusoap.php');
-		$authority = $_REQUEST['au'];
+		$authority = $_REQUEST['Authority'];
 
 		if ( strlen($authority)==36 ) {
 			$client = new nusoap_client('https://de.zarinpal.com/pg/services/WebGate/wsdl', 'wsdl');
