@@ -7,7 +7,7 @@
 <br>
 </a></p>
 
-<form action="modules/zarinpalwg/zp.php" method="post" id="zarinpalwg" class="hidden">
+<form action="modules/zarinpalwg/zp.php?do=payment" method="post" id="zarinpalwg" class="hidden">
     <input type="hidden" name="orderId" value="{$orderId}" />
 </form>
 <br><br>
