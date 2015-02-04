@@ -14,11 +14,11 @@ if (isset($_GET['do'])) {
 	if (!$cookie -> isLogged())
 		Tools::redirect('authentication.php?back=order.php');
 	if ($_GET['do'] == 'payment') {
-		if (isset($_POST['id'])) {
+		//if (isset($_POST['id'])) {
 			$zarinpalwg -> do_payment($cart);
-		} else {
-			echo $zarinpalwg -> error($zarinpalwg -> l('There is a problem.'));
-		}
+	//	} else {
+		//	echo $zarinpalwg -> error($zarinpalwg -> l('There is a problem.'));
+		//}
 	} else {
 		if (isset($_GET['id']) && isset($_GET['amount']) && isset($_GET['Authority']) && isset($_GET['Status'])) {
 			$orderId = $_GET['id'];
