@@ -3,7 +3,7 @@
 <p class="payment_module">
     <a href="javascript:$('#zarinpalwg').submit();" title="{l s='Online payment with zarinpalwg' mod='zarinpalwg'}">
         <img src="modules/zarinpalwg/zarinpal.png" alt="{l s='Online payment with zarinpalwg' mod='zarinpalwg'}" />
-		{l s='Pay by Debit/Credit card through Zarinpal Online Merchent.' mod='zarinpalwg'}
+		{l s=' پرداخت با کارتهای اعتباری / نقدی بانک های عضو شتاب توسط دروازه پرداخت زرين پال ' mod='zarinpalwg'}
 <br>
 </a></p>
 
