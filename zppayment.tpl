@@ -1,11 +1,14 @@
+
+<!-- Zarinpal Payment Module -->
 <p class="payment_module">
-    <a onClick="$('.zarinpalwg').submit();" title="{l s='Online payment with zarinpalwg' mod='zarinpalwg'}">
-        <img src="modules/zarinpalwg/logo.png" alt="{l s='Online payment with zarinpalwg' mod='zarinpalwg'}" />
-		{l s='Online payment with zarinpalwg' mod='zarinpalwg'}
-</a>
-{$zarinpalwg_logo}
-</p>
-<a class="exclusive_large" onClick="$('.zarinpalwg').submit();" title="{l s='Online payment with zarinpalwg' mod='zarinpalwg'}">{l s='Online payment with zarinpalwg' mod='zarinpalwg'}</a>
-<form action="modules/zarinpalwg/zp.php?do=payment" method="post" class="zarinpalwg">
-    <input type="hidden" name="id" value="{$orderId}" />
+    <a href="javascript:$('#zarinpalwg').submit();" title="{l s='Pay by Zarinpal' mod='zarinpalwg'}">
+        <img src="modules/zarinpalwg/zarinpal.png" alt="{l s='Pay by Zarinpal' mod='zarinpalwg'}" />
+		{l s='Pay by Debit/Credit card through Zarinpal Online Merchent.' mod='zarinpalwg'}
+<br>
+</a></p>
+
+<form action="modules/zarinpalwg/payment.php" method="post" id="zarinpalwg" class="hidden">
+    <input type="hidden" name="orderId" value="{$orderId}" />
 </form>
+<br><br>
+<!-- End of Zarinpal Payment Module-->
