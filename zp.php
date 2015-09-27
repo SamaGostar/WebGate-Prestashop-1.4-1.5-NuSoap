@@ -11,8 +11,8 @@ if (isset($_GET['do'])) {
 	include (dirname(__FILE__) . '/../../header.php');
 	include_once (dirname(__FILE__) . '/zarinpalwg.php');
 	$zarinpalwg = new zarinpalwg;
-	if (!$cookie -> isLogged())
-		Tools::redirect('authentication.php?back=order.php');
+//	if (!$cookie -> isLogged())
+//		Tools::redirect('authentication.php?back=order.php');
 	if ($_GET['do'] == 'payment') {
 		//if (isset($_POST['id'])) {
 			$zarinpalwg -> do_payment($cart);
