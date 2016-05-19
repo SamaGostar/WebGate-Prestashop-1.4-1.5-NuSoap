@@ -1,5 +1,5 @@
 <?php
-/**
+/**d
  * @package    zarinpalwg payment module
  * @author     Masoud Amini
  * @copyright  2014  MasoudAmini.ir
@@ -81,7 +81,7 @@ class zarinpalwg extends PaymentModule {
 		if (!class_exists('nusoap_client')) {
 			include 'nusoap_client.php';
 		}
-		$client = new nusoap_client('https://de.zarinpal.com/pg/services/WebGate/wsdl', 'wsdl');
+		$client = new nusoap_client('https://www.zarinpal.com/pg/services/WebGate/wsdl', 'wsdl');
 		$client->soap_defencoding = 'UTF-8';
 		
 		$ZarinpalPin = Configuration::get('zarinpalwg_API');
