@@ -31,7 +31,7 @@ if (isset($_GET['do'])) {
 					if (!class_exists('nusoap_client')) {
 						include './nusoap_client.php';
 					}
-					$client = new nusoap_client('https://de.zarinpal.com/pg/services/WebGate/wsdl', 'wsdl');
+					$client = new nusoap_client('https://www.zarinpal.com/pg/services/WebGate/wsdl', 'wsdl');
 					$client->soap_defencoding = 'UTF-8';
 					
 					$params = array(
