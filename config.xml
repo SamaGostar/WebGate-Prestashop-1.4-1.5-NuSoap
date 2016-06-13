@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>zarinpalwg</name>
-	<displayName><![CDATA[Zarinpal Webgate Payment Modlue]]></displayName>
+	<name>zarinpalzg</name>
+	<displayName><![CDATA[Zarinpal ZarinGate Payment Modlue]]></displayName>
 	<version><![CDATA[1.1]]></version>
 	<description><![CDATA[Online Payment With ZarinPal]]></description>
 	<author><![CDATA[Masoudd Amini]]></author>
