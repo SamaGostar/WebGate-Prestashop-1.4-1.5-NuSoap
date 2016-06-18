@@ -24,9 +24,6 @@ if (isset($_GET['do'])) {
                 $hash = md5($orderId . $amount . $hash);
                 if ($hash == $_SESSION['order' . $orderId]) {
                     $api = Configuration::get('zarinpalwg_API');
-                    if (!class_exists('nusoap_client')) {
-                        include './nusoap_client.php';
-                    }
                     $client = new SoapClient('https://www.zarinpal.com/pg/services/WebGate/wsdl', ['encoding' => 'UTF-8']);
                     $params = [
                         'MerchantID' => $api, // this is our PIN NUMBER
