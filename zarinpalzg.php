@@ -77,8 +77,6 @@ class zarinpalzg extends PaymentModule {
 	}
 
 	public function do_payment($cart) {
-		error_reporting(E_ALL);
-		ini_set('display_errors', 1);
 
 
 		$client = new SoapClient('https://de.zarinpal.com/pg/services/WebGate/wsdl', array('encoding' => 'UTF-8')); 
