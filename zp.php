@@ -28,7 +28,7 @@ if (isset($_GET['do'])) {
                     $params = [
                         'MerchantID' => $api, // this is our PIN NUMBER
                         'Authority' => $_GET["Authority"],
-                        'Amount' => $amount / 10
+                        'Amount' => $amount 
                     ]; // to see if we can change it
                     $result = $client->PaymentVerification($params);
 
