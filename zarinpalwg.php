@@ -94,7 +94,7 @@ class zarinpalwg extends PaymentModule {
         $txt = 'پرداخت سفارش شماره: ' . $cart->id;
         $params = [
                 'MerchantID' => $ZarinpalPin,
-                'Amount' => $amount / 10,
+                'Amount' => $amount ,
                 'Description' => $txt,
                 'Email' => $Email,
                 'Mobile' => $Mobile,
