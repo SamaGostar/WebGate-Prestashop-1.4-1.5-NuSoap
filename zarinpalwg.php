@@ -120,7 +120,7 @@ class zarinpalwg extends PaymentModule
             echo $this->error($this->l('There is a problem.') . ' (' . $result['Status'] . ')');
         } else {
             echo $this->success($this->l('Redirecting...'));
-            echo '<script>window.location=("https://www.zarinpal.com/pg/StartPay/' . $result['Authority'] .  '");</script>';
+            echo '<script>window.location=("https://www.zarinpal.com/pg/StartPay/' . $result['Authority'] .  '/ZarinGate");</script>';
 		}
     }
 
