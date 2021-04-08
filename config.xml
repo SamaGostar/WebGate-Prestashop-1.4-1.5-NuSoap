@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
 	<name>zarinpalwg</name>
-	<displayName><![CDATA[Zarinpal Webgate Payment Modlue ]]></displayName>
-	<version><![CDATA[1.5]]></version>
+	<displayName><![CDATA[Zarinpal Webgate Payment Modlue]]></displayName>
+	<version><![CDATA[1.1]]></version>
 	<description><![CDATA[Online Payment With ZarinPal]]></description>
-	<author><![CDATA[amini]]></author>
+	<author><![CDATA[Masoudd Amini]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>
 	<confirmUninstall>Are you sure you want to delete your details?</confirmUninstall>
 	<is_configurable>1</is_configurable>
