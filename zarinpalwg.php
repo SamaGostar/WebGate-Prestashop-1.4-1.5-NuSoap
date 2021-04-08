@@ -141,8 +141,18 @@ class zarinpalwg extends PaymentModule {
 			if (empty($result['errors'])) {
 				if ($result['data']['code'] == 100) {
 					//	header('Location: https://www.zarinpal.com/pg/StartPay/' . $result['data']["authority"]);
-					echo $this->success($this->l('Redirecting...'));
-					echo '<script>window.location=("https://www.zarinpal.com/pg/StartPay/' . $result['data']["authority"] . '");</script>';
+					//echo $this->success($this->l('Redirecting...'));
+					//echo '<script>window.location=("https://www.zarinpal.com/pg/StartPay/' . $result['data']["authority"] . '");</script>';
+					echo'<html><body>
+<script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+Zarinak.setAuthority("' . $result['data']['authority'] . '");
+Zarinak.showQR();
+Zarinak.open();
+};
+</script>
+</body></html>';
 				}
 			} else {
 				echo '<p>' .
